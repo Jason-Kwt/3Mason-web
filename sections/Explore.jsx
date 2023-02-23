@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { staggerContainer } from '../utils/motion';
-import { TitleText, TypingText, ExploreCard } from '../components';
+import { TitleText, ExploreCard } from '../components';
 import { exploreNFTs } from '../constants';
 import bg05LogoText from '../public/bg05-LogoText.png';
 

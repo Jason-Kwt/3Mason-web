@@ -1,14 +1,15 @@
 'use client';
+
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import styles from '../styles';
-import { navVariants } from '../utils/motion';
-import logo from '../public/logo.png';
 import Image from 'next/image';
 import Link from 'next/link';
-
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { motion } from 'framer-motion';
+import { navVariants } from '../utils/motion';
+
+import styles from '../styles';
+import logo from '../public/logo.png';
 
 const Navbar = () => {
   const navigation = [
@@ -32,7 +33,7 @@ const Navbar = () => {
       <div
         className={`${styles.innerWidth} mx-auto flex justify-between  gap-8`}
       >
-        <Link href="/#home">
+        <Link href="#home">
           <Image
             src={logo}
             alt="logo"
@@ -72,7 +73,7 @@ const Navbar = () => {
           className="fixed inset-0 z-10 overflow-y-auto bg-black px-6 py-6 lg:hidden"
         >
           <div className="flex items-center justify-between">
-            <Link href="#" className="-m-1.5 p-1.5">
+            <Link href="#home" className="-m-1.5 p-1.5">
               <Image src={logo} alt="" />
             </Link>
             <button
